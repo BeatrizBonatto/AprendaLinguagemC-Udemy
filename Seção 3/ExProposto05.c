@@ -8,5 +8,20 @@ ou se está fora da faixa.*/
 
 int main(void)
 {
+    int valor;
+
+    printf("Digite um numero inteiro entre 0 e 10: ");
+    scanf("%d", &valor);
+
+    if (valor >= 0 && valor <= 10)
+    {
+        printf("Valor dentro da faixa esperada!\n");
+    }
+    else
+    {
+        printf("Valor fora da faixa\n");
+    }
     
+    system("pause");
+    return 0;
 }
